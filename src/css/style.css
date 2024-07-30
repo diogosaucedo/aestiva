@@ -1,0 +1,31 @@
+.main {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  /* Box model */
+  width: 200px;
+  border-radius: 8px;
+  padding: 8px;
+
+  /* Display */
+  background-color: #020617;
+}
+button {
+  /* Box model */
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+
+  /* Display */
+  background-color: #f1f5f9;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #171717;
+}
+
+button:hover {
+  cursor: pointer;
+}
