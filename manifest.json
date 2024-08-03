@@ -15,5 +15,8 @@
       },
       "description": "Abrir a extensão"
     }
+  },
+  "icons":{
+    "48":"icon.png"
   }
 }
