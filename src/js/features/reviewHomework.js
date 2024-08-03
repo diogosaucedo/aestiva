@@ -69,7 +69,8 @@ const reviewHomework = async () => {
   async function sendToLLM(message) {
     const url = "http://localhost:11434/api/generate";
     const prompt = `
-      Por favor, reescreva a mensagem a seguir para não parecer uma cópia, e corrija todos erros de português. Retorne apenas a mensagem corrigida, sem explicações ou comentários adicionais:
+      Por favor, corrija todos os erros de português na mensagem a seguir, mantendo o estilo de escrita da mensagem original. Gere um novo texto que não pareça copiado e colado, podendo alterar a ordem dos blocos de texto se fizer sentido. Retorne apenas a mensagem corrigida e reorganizada, sem explicações ou comentários adicionais:
+
       ${message}
       `;
     const data = {
