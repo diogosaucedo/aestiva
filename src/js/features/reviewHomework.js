@@ -69,7 +69,7 @@ const reviewHomework = async () => {
   async function sendToLLM(message) {
     const url = "http://localhost:11434/api/generate";
     const prompt = `
-      Rewrite the text below, ensuring that it keeps its original meaning but does not appear copied or pasted. Follow the rewriting techniques defined in the model. Return only the corrected and reorganized text, without any explanations or additional comments:
+      Por favor, reescreva o texto abaixo aplicando as técnicas de reescrita definidas, mantendo o significado original e o contexto técnico:
 
       ${message}
       `;
